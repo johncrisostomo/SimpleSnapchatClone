@@ -83,11 +83,55 @@
                     <connections>
                         <outlet property="emailTextField" destination="LNf-HW-im6" id="hUc-Ok-Thv"/>
                         <outlet property="passwordTextField" destination="iS5-wF-pzN" id="SQW-MN-0g6"/>
+                        <segue destination="9zV-Jp-dNo" kind="presentation" identifier="signInSegue" id="gbv-gQ-ntm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="141.59999999999999" y="112.89355322338831"/>
+        </scene>
+        <!--Snaps View Controller-->
+        <scene sceneID="AhW-FR-QoF">
+            <objects>
+                <viewController id="WzK-Tl-MIp" customClass="SnapsViewController" customModule="SimpleSnapchatClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qb5-8L-iPl"/>
+                        <viewControllerLayoutGuide type="bottom" id="fqk-Gk-NkT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n38-kF-akq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="x4Q-cA-Pop">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="Pe9-XK-4WO">
+                            <connections>
+                                <action selector="logoutTapped:" destination="WzK-Tl-MIp" id="HmY-Ur-E8I"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UMJ-fa-BHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1821.5999999999999" y="112.89355322338831"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Chr-lf-VYU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9zV-Jp-dNo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="peO-BI-kTP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WzK-Tl-MIp" kind="relationship" relationship="rootViewController" id="nHF-Pq-reh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zcf-EQ-mUV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="880.79999999999995" y="112.89355322338831"/>
         </scene>
     </scenes>
 </document>
