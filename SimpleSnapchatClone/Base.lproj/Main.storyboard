@@ -27,8 +27,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LNf-HW-im6">
-                                <rect key="frame" x="87.5" y="161" width="200" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LNf-HW-im6">
+                                <rect key="frame" x="87.5" y="168.5" width="200" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="daa-hk-yX0"/>
                                 </constraints>
@@ -36,8 +36,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iS5-wF-pzN">
-                                <rect key="frame" x="87.5" y="216" width="200" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iS5-wF-pzN">
+                                <rect key="frame" x="87.5" y="218.5" width="200" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="GkY-IR-tah"/>
                                 </constraints>
@@ -45,19 +45,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uak-kk-6L9">
-                                <rect key="frame" x="150" y="347" width="75" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uak-kk-6L9">
+                                <rect key="frame" x="150" y="354" width="75" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="Ri7-2b-F2a"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
-                                <state key="normal" title="Turn In"/>
+                                <state key="normal" title="Turn Up"/>
                                 <connections>
                                     <action selector="turnUpTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Pz-ob-L6R"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="If you don't have an account, it will be automatically created upon tapping turn in!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PtQ-kq-XR4">
-                                <rect key="frame" x="62" y="254" width="250" height="38"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you don't have an account, it will be automatically created upon tapping turn up!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PtQ-kq-XR4">
+                                <rect key="frame" x="59" y="268.5" width="256" height="30.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="1v1-4i-plb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Oblique" family="Avenir" pointSize="11"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -72,6 +75,7 @@
                             <constraint firstItem="uak-kk-6L9" firstAttribute="top" secondItem="PtQ-kq-XR4" secondAttribute="bottom" constant="55" id="OXZ-Z1-8py"/>
                             <constraint firstItem="uak-kk-6L9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZjP-rc-zM2"/>
                             <constraint firstItem="PtQ-kq-XR4" firstAttribute="top" secondItem="iS5-wF-pzN" secondAttribute="bottom" constant="20" id="b0G-ZC-rcK"/>
+                            <constraint firstItem="LNf-HW-im6" firstAttribute="top" secondItem="csr-JQ-JxS" secondAttribute="bottom" constant="40" id="cxd-g5-IhF"/>
                             <constraint firstItem="csr-JQ-JxS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="llG-tC-K99"/>
                             <constraint firstItem="LNf-HW-im6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nwA-Wo-3El"/>
                         </constraints>
