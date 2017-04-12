@@ -93,7 +93,7 @@
         <!--Snaps View Controller-->
         <scene sceneID="AhW-FR-QoF">
             <objects>
-                <viewController id="WzK-Tl-MIp" customClass="SnapsViewController" customModule="SimpleSnapchatClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="WzK-Tl-MIp" customClass="SnapsViewController" customModule="SimpleSnapchatClone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qb5-8L-iPl"/>
                         <viewControllerLayoutGuide type="bottom" id="fqk-Gk-NkT"/>
@@ -101,7 +101,19 @@
                     <view key="view" contentMode="scaleToFill" id="n38-kF-akq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nu2-fZ-f5n">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fqk-Gk-NkT" firstAttribute="top" secondItem="nu2-fZ-f5n" secondAttribute="bottom" id="DJm-cj-Xne"/>
+                            <constraint firstAttribute="trailing" secondItem="nu2-fZ-f5n" secondAttribute="trailing" id="v0Q-jn-Kr9"/>
+                            <constraint firstItem="nu2-fZ-f5n" firstAttribute="top" secondItem="qb5-8L-iPl" secondAttribute="bottom" id="yT6-CK-IXz"/>
+                            <constraint firstItem="nu2-fZ-f5n" firstAttribute="leading" secondItem="n38-kF-akq" secondAttribute="leading" id="zyz-dz-6oo"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="x4Q-cA-Pop">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="Pe9-XK-4WO">
@@ -115,6 +127,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="nu2-fZ-f5n" id="H2F-34-bMV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UMJ-fa-BHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -152,7 +167,6 @@
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="nextTapped:" destination="QrH-PL-u5U" eventType="touchUpInside" id="4Wn-gr-kps"/>
-                                    <segue destination="bBM-qe-huC" kind="show" identifier="selectUserSegue" id="S0Q-KZ-Y3b"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -179,6 +193,7 @@
                         <outlet property="descriptionTextField" destination="BLo-Zv-bD3" id="zsd-f8-gHj"/>
                         <outlet property="imageView" destination="1dK-Do-fSg" id="9LA-WX-oAC"/>
                         <outlet property="nextButton" destination="oIo-0c-7ti" id="0jo-eN-wvm"/>
+                        <segue destination="bBM-qe-huC" kind="show" identifier="selectUserSegue" id="SOL-rn-VM7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cAH-WY-8wk" userLabel="First Responder" sceneMemberID="firstResponder"/>
