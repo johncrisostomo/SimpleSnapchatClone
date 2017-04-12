@@ -152,6 +152,7 @@
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="nextTapped:" destination="QrH-PL-u5U" eventType="touchUpInside" id="4Wn-gr-kps"/>
+                                    <segue destination="bBM-qe-huC" kind="show" identifier="selectUserSegue" id="S0Q-KZ-Y3b"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -183,6 +184,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cAH-WY-8wk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2603" y="113"/>
+        </scene>
+        <!--Select User View Controller-->
+        <scene sceneID="huV-Dp-1aw">
+            <objects>
+                <viewController id="bBM-qe-huC" customClass="SelectUserViewController" customModule="SimpleSnapchatClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bdo-yE-SyB"/>
+                        <viewControllerLayoutGuide type="bottom" id="lPM-FO-GXL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yMk-vO-5tY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h2R-TR-Yro">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="h2R-TR-Yro" firstAttribute="leading" secondItem="yMk-vO-5tY" secondAttribute="leading" id="Gyn-7f-106"/>
+                            <constraint firstItem="lPM-FO-GXL" firstAttribute="top" secondItem="h2R-TR-Yro" secondAttribute="bottom" id="OYR-oT-Gli"/>
+                            <constraint firstAttribute="trailing" secondItem="h2R-TR-Yro" secondAttribute="trailing" id="RRh-FV-ahm"/>
+                            <constraint firstItem="h2R-TR-Yro" firstAttribute="top" secondItem="Bdo-yE-SyB" secondAttribute="bottom" id="Tbe-Fu-5Ca"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="h2R-TR-Yro" id="cx0-tW-xl7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fpp-3X-f2U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3435" y="118"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Chr-lf-VYU">
