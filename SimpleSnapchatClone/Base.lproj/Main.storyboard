@@ -188,7 +188,7 @@
         <!--Select User View Controller-->
         <scene sceneID="huV-Dp-1aw">
             <objects>
-                <viewController id="bBM-qe-huC" customClass="SelectUserViewController" customModule="SimpleSnapchatClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="bBM-qe-huC" customClass="SelectUserViewController" customModule="SimpleSnapchatClone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bdo-yE-SyB"/>
                         <viewControllerLayoutGuide type="bottom" id="lPM-FO-GXL"/>
