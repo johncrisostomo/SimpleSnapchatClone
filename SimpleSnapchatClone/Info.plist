@@ -4,6 +4,8 @@
 <dict>
 	<key>NSCameraUsageDescription</key>
 	<string>The app needs to use your camera to take and send pictures.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Will be using this for debugging.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
