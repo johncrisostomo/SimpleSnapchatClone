@@ -8,12 +8,16 @@
 
 import UIKit
 import FirebaseDatabase
+import FirebaseAuth
 
 class SelectUserViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
     var users: [User] = []
+    
+    var imageURL = ""
+    var descriptionText = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,5 +50,22 @@ class SelectUserViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return users.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedUser = users[indexPath.row]
+        
+        let snap = [
+            "from": FIRAuth.auth()?.currentUser?.email!,
+            "description": descriptionText,
+            "image": imageURL,
+        ]
+        
+        FIRDatabase.database().reference()
+            .child("users")
+            .child(selectedUser.uid)
+            .child("snaps")
+            .childByAutoId()
+            .setValue(snap)
     }
 }
