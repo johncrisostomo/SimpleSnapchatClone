@@ -32,6 +32,8 @@ class SnapsViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 snap.imageURL = (snapshot.value as! NSDictionary)["image"] as! String
                 snap.from = (snapshot.value as! NSDictionary)["from"] as! String
                 snap.imageDescription = (snapshot.value as! NSDictionary)["description"] as! String
+                snap.key = snapshot.key
+                snap.uuid = (snapshot.value as! NSDictionary)["uuid"] as! String
                 
                 print(snap.from)
                 
@@ -39,6 +41,21 @@ class SnapsViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 
                 self.tableView.reloadData()
         })
+        
+        FIRDatabase.database().reference()
+            .child("users")
+            .child(FIRAuth.auth()!.currentUser!.uid)
+            .child("snaps")
+            .observe(FIRDataEventType.childRemoved, with: {
+                (snapshot) in
+                for (index, snap) in self.snaps.enumerated() {
+                    if snap.key == snapshot.key {
+                        self.snaps.remove(at: index)
+                    }
+                }
+                
+                self.tableView.reloadData()
+            })
         
         tableView.delegate = self
         tableView.dataSource = self

@@ -18,6 +18,7 @@ class SelectUserViewController: UIViewController, UITableViewDelegate, UITableVi
     
     var imageURL = ""
     var descriptionText = ""
+    var uuid = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +60,7 @@ class SelectUserViewController: UIViewController, UITableViewDelegate, UITableVi
             "from": FIRAuth.auth()?.currentUser?.email!,
             "description": descriptionText,
             "image": imageURL,
+            "uuid": uuid,
         ]
         
         FIRDatabase.database().reference()
