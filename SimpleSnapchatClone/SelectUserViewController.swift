@@ -33,7 +33,9 @@ class SelectUserViewController: UIViewController, UITableViewDelegate, UITableVi
             user.email = (snapshot.value as! NSDictionary)["email"] as! String
             user.uid = snapshot.key
             
-            self.users.append(user)
+            if user.email != FIRAuth.auth()?.currentUser?.email! {
+                self.users.append(user)
+            }
             
             self.tableView.reloadData()
         })
