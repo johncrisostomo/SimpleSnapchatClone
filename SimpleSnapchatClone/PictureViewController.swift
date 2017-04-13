@@ -45,6 +45,7 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     
     @IBAction func nextTapped(_ sender: Any) {
+        nextButton.isEnabled = false
         let imagesFolder = FIRStorage.storage().reference().child("images")
         
         let imageData = UIImageJPEGRepresentation(imageView.image!, 0.1)!
