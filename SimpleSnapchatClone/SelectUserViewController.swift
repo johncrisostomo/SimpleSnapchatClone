@@ -67,5 +67,7 @@ class SelectUserViewController: UIViewController, UITableViewDelegate, UITableVi
             .child("snaps")
             .childByAutoId()
             .setValue(snap)
+        
+        navigationController!.popToRootViewController(animated: true)
     }
 }

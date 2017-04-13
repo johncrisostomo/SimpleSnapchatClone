@@ -18,6 +18,7 @@
 		194BA1B21E9DAE9F000E532F /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194BA1B11E9DAE9F000E532F /* SelectUserViewController.swift */; };
 		194BA1B41E9DC06A000E532F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194BA1B31E9DC06A000E532F /* User.swift */; };
 		194BA1B81E9E1077000E532F /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194BA1B71E9E1077000E532F /* Snap.swift */; };
+		1985E0651E9E28B700578131 /* ViewSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1985E0641E9E28B700578131 /* ViewSnapViewController.swift */; };
 		E7BB9AF4D57B9FC8A03AA4E2 /* Pods_SimpleSnapchatClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9F5E12A88C37DDC43F3FF6 /* Pods_SimpleSnapchatClone.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		194BA1B11E9DAE9F000E532F /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 		194BA1B31E9DC06A000E532F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		194BA1B71E9E1077000E532F /* Snap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
+		1985E0641E9E28B700578131 /* ViewSnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSnapViewController.swift; sourceTree = "<group>"; };
 		5E9F5E12A88C37DDC43F3FF6 /* Pods_SimpleSnapchatClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleSnapchatClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A8B2A4F06A0CFCBCA84CA76 /* Pods-SimpleSnapchatClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleSnapchatClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleSnapchatClone/Pods-SimpleSnapchatClone.debug.xcconfig"; sourceTree = "<group>"; };
 		7D6D0E864F8DF504848A2908 /* Pods-SimpleSnapchatClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleSnapchatClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleSnapchatClone/Pods-SimpleSnapchatClone.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				194BA1AB1E9CFB19000E532F /* SnapsViewController.swift */,
 				194BA1AF1E9D0E21000E532F /* PictureViewController.swift */,
 				194BA1B11E9DAE9F000E532F /* SelectUserViewController.swift */,
+				1985E0641E9E28B700578131 /* ViewSnapViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				1916A2CC1E9C7AA400B9EC7B /* SignInViewController.swift in Sources */,
 				194BA1B01E9D0E21000E532F /* PictureViewController.swift in Sources */,
 				194BA1B41E9DC06A000E532F /* User.swift in Sources */,
+				1985E0651E9E28B700578131 /* ViewSnapViewController.swift in Sources */,
 				194BA1B21E9DAE9F000E532F /* SelectUserViewController.swift in Sources */,
 				194BA1B81E9E1077000E532F /* Snap.swift in Sources */,
 				1916A2CA1E9C7AA400B9EC7B /* AppDelegate.swift in Sources */,
